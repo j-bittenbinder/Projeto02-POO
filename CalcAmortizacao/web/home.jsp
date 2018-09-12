@@ -9,10 +9,22 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Home | Cálculo de Amortização</title>
+        <title>Grupo 03 | Home</title>
     </head>
     <body>
         <%@include file="WEB-INF/jspf/includes.jspf" %>
-        <h1>Hello World!</h1>
+        <center>
+        <h1>Bem-vindo!</h1>
+        <hr/>
+        <h4>Amortização é um processo que extingue dívidas através de pagamentos
+            periódicos, é a extinção de uma dívida através da quitação da mesma. 
+            A amortização traduz-se pela soma do reembolso do capital ou do 
+            pagamento dos juros do saldo devedor.</h4>
+            <br/><br/>
+        <h6>Esta aplicação foi desenvolvida para realizar os seguintes cálculos:
+            Amortização constante, amortização americana e tabela price.</h6>
+        <br/>
+        <hr/>
+        </center>    
     </body>
 </html>
