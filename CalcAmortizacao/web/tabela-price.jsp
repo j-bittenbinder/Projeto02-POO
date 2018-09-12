@@ -15,7 +15,7 @@
     </head>
     <body>
         <%@include file="WEB-INF/jspf/includes.jspf" %>
-        <div id="formatação">
+        <div id="container">
             <h2>Tabela Price</h2>
             <%
                 double capital = 0;
@@ -28,6 +28,7 @@
                 try {
                     capital = Double.parseDouble(request.getParameter("txtcapital"));
                 } catch (Exception e) {
+
                 }
                 try {
                     taxa = Double.parseDouble(request.getParameter("txtjuros"));
@@ -90,7 +91,11 @@
                     <td><%=String.format("R$ %.2f", amortizao)%></td>
                 </tr>
                 <%}%>
-            </table><%}%>
-        </div>
-    </body>
+            </table><%} else { %>
+            <td>
+            <tr > <p style="color:red;font-size:20px;" >Valores incorretos, Favor verificar os numeros informados. <p>   </tr>   
+        </td>
+        <%}%>
+    </div>
+</body>
 </html>
