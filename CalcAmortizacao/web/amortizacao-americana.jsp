@@ -11,19 +11,19 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Grupo 03 | Amortização Americana</title>
-        
+
         <style>
             form > div {
                 width: 15%;
                 margin: 0 auto;
             }
-            
+
             label{
                 text-align: left;
                 display: block !important;
             }
         </style>
-        
+
     </head>
     <body>
         <%@include file="WEB-INF/jspf/includeMenu.jspf" %>
@@ -36,7 +36,7 @@
             <label for="valor"><b>Valor Financiado</b></label>
             <input id="valor" type="text" name="valor"/>
         </div>
-            
+
         <div class="mb-3">
             <label for="meses"><b>Meses</b></label>
             <input id="meses" type="text" name="meses"/>
@@ -63,10 +63,12 @@
     %>
     <br/>
     <br/>
-    <table border="2">
-        <tr>
-            <th>#</th><th>Parcelas</th><th>Amortização</th><th>Juros</th><th>Saldo devedor</th>
-        </tr>
+    <table border="2" class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>#</th><th>Parcelas</th><th>Amortização</th><th>Juros</th><th>Saldo devedor</th>
+            </tr>
+        </thead>
         <tr>
             <% for (int i = 0; i < meses; i++) {
                     double parcela = valor * juros;
