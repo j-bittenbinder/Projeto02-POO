@@ -29,8 +29,12 @@
         <%@include file="WEB-INF/jspf/includeMenu.jspf" %>
 
     <center><h2><b>Amortização Americana</b></h2></center>
-    <br/><br/>
-
+    <hr/>
+    <center><h6 style="line-height: 1.5">O Sistema de Amortização Americano, (SAA), 
+            é uma forma de pagamento de empréstimos que se caracteriza pelo pagamento 
+            apenas dos juros da dívida, deixando o valor da dívida constante, que 
+            pode ser paga em apenas um único pagamento: <b>Juros = Valor emprestado x Juros</b></h6></center>
+    <br/>
     <form class="text-center jumbotron">
         <div class="mb-3">
             <label for="valor"><b>Valor Financiado</b></label>
@@ -46,11 +50,9 @@
             <label for="juros"><b>Juros</b></label>
             <input id="juros" type="text" name="juros"/>
         </div>
-        <br/>
         <input type="submit" name="enviar" value="Gerar Amortização" class="btn"/>
-        <br/><br/>
+        
     </form>
-
 
     <%  if (request.getParameter("valor") != null
                 & request.getParameter("meses") != null

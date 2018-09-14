@@ -10,7 +10,6 @@
         <button onclick="location.href='amortizacao-americana.jsp'" class="btn btn-info font-weight-bold">Amortização Americana</button>
         <button onclick="location.href='tabela-price.jsp'" class="btn btn-info font-weight-bold">Tabela Price</button>
     </div>
-        <br/>
         <hr/>
     </center>
 </body>

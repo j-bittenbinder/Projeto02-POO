@@ -11,13 +11,13 @@
             <div class="container text-center">
                     <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                    <p><span class="glyphicon glyphicon-bishop">teste1</span></p>
+                                    <h6><span class="glyphicon glyphicon-bishop">teste1</span></h6>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                    <p>&reg; Teste2</p>
+                                    <h6>&reg; Teste2</h6>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                    <p><a href="google.com" target="_blank">Google</a></span></p>
+                                    <h6><a href="google.com" target="_blank">Google</a></span></h6>
                             </div>
                     </div>
             </div>

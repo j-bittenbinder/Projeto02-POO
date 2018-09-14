@@ -14,15 +14,15 @@
     <body>
         <%@include file="WEB-INF/jspf/includeMenu.jspf" %>
         <center>
-            <h1><b>Bem-vindo!<b/></h1>
+            <h1><b>Bem-vindo!</b></h1>
         <hr/>
-        <h4>Amortização é um processo que extingue dívidas através de pagamentos
+        <h4 class="text-center jumbotron" style="line-height: 1.7">Amortização é um processo que extingue dívidas através de pagamentos
             periódicos, é a extinção de uma dívida através da quitação da mesma. 
             A amortização traduz-se pela soma do reembolso do capital ou do 
             pagamento dos juros do saldo devedor.</h4>
-            <br/><br/>
-        <h6>Esta aplicação foi desenvolvida para realizar os seguintes cálculos:
-            Amortização constante, amortização americana e tabela price.</h6>
+            <br/>
+        <h5>Esta aplicação foi desenvolvida para realizar os cálculos de:<br/>
+            Amortização Constante, Amortização Americana e Tabela Price.</h5>
         <br/>
         <hr/>
         </center>

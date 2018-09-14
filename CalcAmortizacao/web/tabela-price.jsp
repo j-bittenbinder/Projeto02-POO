@@ -29,7 +29,17 @@
     <body>
         <%@include file="WEB-INF/jspf/includeMenu.jspf" %>
         <div id="container">
-            <center><h2><b>Tabela Price</b></h2></center><br/><br/>
+            <center><h2><b>Tabela Price</b></h2></center>
+            <hr/>
+            <center><h6 style="line-height: 1.5">Na hora de calcular empréstimos pela 
+                Tabela PRICE, a característica mais marcante é que a prestação é 
+                constante, por isso ela é o primeiro item a ser calculado, via 
+                fórmula do PMT das aulas de matemática financeira. O juros, 
+                valor monetário, é calculado em cima da taxa de juros aplicada 
+                ao valor do saldo devedor em d−1 (dia anterior). 
+                A amortização é calculada como resultado da parcela menos os 
+                juros: <b>Amortização = Parcela – Juros</b></h6></center>
+            <br/>
                         <%
                             double capital = 0;
                             double taxa = 0;
@@ -73,9 +83,9 @@
                     <label for="j"><b>Juros</b></label>
                     <input type="text" name="txtjuros" id="txtjuros">
                 </div>
-                <br/>
+                
                 <input type="submit" value="Gerar Amortização" class="btn">
-                <br/><br/>
+                
             </form>
 
             <hr>
@@ -112,11 +122,8 @@
                     <td><%=String.format("R$ %.2f", amortizao)%></td>
                 </tr>
                 <%}%>
-            </table><%} else { %>
-            <td>
-            <tr > <p style="color:red;font-size:20px;" >Valores incorretos, Favor verificar os numeros informados. <p>   </tr>
-                </td>
                 <%}%>
+            </table>
         </div>
 
         <%@include file="WEB-INF/jspf/includeRodape.jspf" %>

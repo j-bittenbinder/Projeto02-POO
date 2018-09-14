@@ -26,8 +26,15 @@
     <body>
         <%@include file="WEB-INF/jspf/includeMenu.jspf" %>
     <center><h2><b>Amortização Constante</b></h2></center>
-    <br/><br/>
-
+    <hr/>
+    <center><h6 style="line-height: 1.5">No Sistema de Amortização Constante 
+        (SAC), como o nome induz, a amortização é sempre a mesma ao longo do 
+        tempo, sendo o primeiro item a ser calculado. O juros, valor monetário, 
+        é calculado em cima da taxa de juros aplicada ao valor do saldo devedor 
+        em d−1 (dia anterior). 
+        Já a parcela, na tabela SAC, é resultado simplesmente da soma entre 
+        amortização e juros, ou seja: <b>Parcela = Amortização + Juros</b></h6></center>
+    <br/>
     <form class="text-center jumbotron">
         <div class="mb-3">
             <label for="valor"><b>Valor Financiado</b></label>
@@ -43,9 +50,9 @@
             <label for="juros"><b>Juros</b></label>
             <input id="juros" type="text" name="juros"/>
         </div>
-        <br/>
+        
         <input type="submit" name="enviar" value="Gerar Amortização" class="btn"/>
-        <br/><br/>
+        
     </form>
 
 
