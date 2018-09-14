@@ -12,6 +12,19 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Grupo 03 | Tabela Price</title>
+        
+        <style>
+            form > div {
+                width: 15%;
+                margin: 0 auto;
+            }
+            
+            label{
+                text-align: left;
+                display: block !important;
+            }
+        </style>
+        
     </head>
     <body>
         <%@include file="WEB-INF/jspf/includeMenu.jspf" %>
@@ -44,20 +57,27 @@
                 double linha2 = 1 - (1 / x);
 
             %>
-            <center><form> 
-                <label for="C"><b>Capital</b></label><br>
-                <input type="text" name="txtcapital" id="txtcapital">
-                <br>
-                <label for="m"><b>Meses</b></label><br>
-                <input type="text" name="txtmeses" id="txtmeses">
-                <br>
-                <label for="j"><b>Juros</b></label><br>
-                <input type="text" name="txtjuros" id="txtjuros">
+            
+            <form class="text-center jumbotron">
+                <div class="mb-3">
+                    <label for="C"><b>Capital</b></label>
+                    <input type="text" name="txtcapital" id="txtcapital">
+                </div>
 
-                <br><br>
+                <div class="mb-3">
+                    <label for="m"><b>Meses</b></label>
+                    <input type="text" name="txtmeses" id="txtmeses">
+                </div>
+
+                <div class="mb-3">
+                    <label for="j"><b>Juros</b></label>
+                    <input type="text" name="txtjuros" id="txtjuros">
+                </div>
+                <br/>
                 <input type="submit" value="Gerar Amortização" class="btn">
                 <br/><br/>
-            </form></center>
+            </form>
+            
             <hr>
             <%if (capital > 0 && meses > 0 && taxa > 0) {%>
             <table border="1" class="tabela">
@@ -93,7 +113,7 @@
                 <%}%>
             </table><%} else { %>
             <td>
-            <tr > <p style="color:red;font-size:20px;" >Valores incorretos, Favor verificar os numeros informados. <p>   </tr> -->  
+            <tr > <p style="color:red;font-size:20px;" >Valores incorretos, Favor verificar os numeros informados. <p>   </tr>
         </td>
         <%}%>
     </div>

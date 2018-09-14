@@ -46,8 +46,8 @@
             <label for="juros"><b>Juros</b></label>
             <input id="juros" type="text" name="juros"/>
         </div>
-
-        <input type="submit" name="enviar" value="Gerar amortização" class="btn"/>
+        <br/>
+        <input type="submit" name="enviar" value="Gerar Amortização" class="btn"/>
         <br/><br/>
     </form>
 
