@@ -11,6 +11,17 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Grupo 03 | Amortização Constante</title>
+        <style>
+            form > div {
+                width: 15%;
+                margin: 0 auto;
+            }
+
+            label{
+                text-align: left;
+                display: block !important;
+            }
+        </style>
     </head>
     <body>
         <%@include file="WEB-INF/jspf/includeMenu.jspf" %>

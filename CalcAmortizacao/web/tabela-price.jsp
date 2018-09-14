@@ -60,7 +60,7 @@
 
             <form class="text-center jumbotron">
                 <div class="mb-3">
-                    <label for="C"><b>Capital</b></label>
+                    <label for="C"><b>Valor Financiado</b></label>
                     <input type="text" name="txtcapital" id="txtcapital">
                 </div>
 
