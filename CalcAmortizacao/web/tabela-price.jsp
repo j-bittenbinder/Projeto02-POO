@@ -11,12 +11,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Tabela Price</title>
+        <title>Grupo 03 | Tabela Price</title>
     </head>
     <body>
-        <%@include file="WEB-INF/jspf/includes.jspf" %>
+        <%@include file="WEB-INF/jspf/includeMenu.jspf" %>
         <div id="container">
-            <h2>Tabela Price</h2>
+            <center><h2><b>Tabela Price</b></h2></center><br/><br/>
             <%
                 double capital = 0;
                 double taxa = 0;
@@ -44,7 +44,7 @@
                 double linha2 = 1 - (1 / x);
 
             %>
-            <form> 
+            <center><form> 
                 <label for="C"><b>Capital</b></label><br>
                 <input type="text" name="txtcapital" id="txtcapital">
                 <br>
@@ -57,7 +57,7 @@
                 <br><br>
                 <input type="submit" value="Gerar Amortização" class="btn">
                 <br/><br/>
-            </form>
+            </form></center>
             <hr>
             <%if (capital > 0 && meses > 0 && taxa > 0) {%>
             <table border="1" class="tabela">
@@ -93,9 +93,11 @@
                 <%}%>
             </table><%} else { %>
             <td>
-            <tr > <p style="color:red;font-size:20px;" >Valores incorretos, Favor verificar os numeros informados. <p>   </tr>   
+            <tr > <p style="color:red;font-size:20px;" >Valores incorretos, Favor verificar os numeros informados. <p>   </tr> -->  
         </td>
         <%}%>
     </div>
-</body>
+    
+        <%@include file="WEB-INF/jspf/includeRodape.jspf" %>
+    </body>
 </html>

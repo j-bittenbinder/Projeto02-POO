@@ -12,7 +12,9 @@
         <title>Grupo 03 | Amortização Constante</title>
     </head>
     <body>
-        <%@include file="WEB-INF/jspf/includes.jspf" %>
+        <%@include file="WEB-INF/jspf/includeMenu.jspf" %>
         <h1>Hello World!</h1>
+    
+        <%@include file="WEB-INF/jspf/includeRodape.jspf" %>
     </body>
 </html>

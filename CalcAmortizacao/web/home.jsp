@@ -12,9 +12,9 @@
         <title>Grupo 03 | Home</title>
     </head>
     <body>
-        <%@include file="WEB-INF/jspf/includes.jspf" %>
+        <%@include file="WEB-INF/jspf/includeMenu.jspf" %>
         <center>
-        <h1>Bem-vindo!</h1>
+            <h1><b>Bem-vindo!<b/></h1>
         <hr/>
         <h4>Amortização é um processo que extingue dívidas através de pagamentos
             periódicos, é a extinção de uma dívida através da quitação da mesma. 
@@ -25,6 +25,8 @@
             Amortização constante, amortização americana e tabela price.</h6>
         <br/>
         <hr/>
-        </center>    
+        </center>
+        
+        <%@include file="WEB-INF/jspf/includeRodape.jspf" %>
     </body>
 </html>
