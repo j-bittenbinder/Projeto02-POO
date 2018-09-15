@@ -21,7 +21,7 @@
             A amortização traduz-se pela soma do reembolso do capital ou do 
             pagamento dos juros do saldo devedor.</h4>
             <br/>
-        <h5>Esta aplicação foi desenvolvida para realizar os cálculos de:<br/>
+        <h5>Utilize o menu acima para realizar os seguintes cálculos:<br/>
             Amortização Constante, Amortização Americana e Tabela Price.</h5>
         <br/>
         <hr/>
