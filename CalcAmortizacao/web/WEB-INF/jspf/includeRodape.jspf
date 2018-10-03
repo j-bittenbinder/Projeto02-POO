@@ -15,7 +15,7 @@
                 <span class="font-weight-bold h5">
                     <h6>Aplicação Web desenvolvida por:</h6>
                 </span>
-                    <div class="row">
+                <div class="row" center>
                             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                                     <i class="fa fa-github"></i>
                                     <a href="https://github.com/carlosanalista">Carlos Alberto da Silva</a>
